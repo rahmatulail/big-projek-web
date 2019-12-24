@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+             body{
+            margin: 0PX;
+            padding: 0px;
+            background: url(images/hantu.jpg);
+            background-size: cover;
+            
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: grey;
+            font-family: cursive;
+        }
+        .middle{
+            overflow: hidden;
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px ;
+            text-decoration: none;
+        }
+        .topnav a:hover{
+            background-color: #gray;
+            color: black;
+        }
+        .loginbox{
+            width: 320px;
+            height: 420px;
+            background: rgba(0, 0, 0, .6);
+            color: #ffffff;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            box-sizing: border-box;
+            box-shadow: rgba(0, 0, 0, .5);
+            padding: 70px;
+            border-radius: 10px;
+        }
+        h1{
+            margin: 0;
+            padding: 0px 0px 20px;
+            text-align: center;
+            font-size: 22px;
+        }
+        .gmbr{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: -50px;
+            left:calc(36%);
+        }
+        .loginbox input[type="text"]{
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #ffffff;
+            font-size: 18px;
+        }
+        .loginbox  input[type="password"]{
+            border: none;
+            border-bottom: 1px solid #ffffff;
+            background: transparent;
+            outline: none;
+            height: 40px;
+            color: #ffffff;
+            font-size: 18px; 
+            padding-bottom: 15px;
+        }
+        .loginbox input[type="submit"]{
+            border: none;
+            outline: none;
+            height: 40px;
+            background: #fb2525;
+            color: #ffffff;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 25px;
+        }
+        .loginbox input[type="submit"]:hover{
+            background: honeydew;
+            color: #fb2525;
+            border-radius: 25px;
+        }
+        
+        .loginbox a{
+            text-decoration: none;
+            font-size: 12px;
+            line-height:20px;
+            padding-top: 10px;
+            padding-right: 5px;
+            color: darkgrey;
+        }
+ 
+        .btn{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #f2f2f2;
+            margin: 10px;
+            border-radius: 30%;
+            box-shadow: 0 5px 15px -5px #00000070;
+            color: #3498db;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .btn i{
+            line-height: 90px;
+            font-size: 26px;
+            transition: 0.2s linear;
+        }
+        .btn i img{
+            margin-bottom: 30px;
+            width: 30px;
+            height: 30px;
+        }
+        .btn:hover i{
+            transform: scale(1.3);
+            color: #f2f2f2;
+
+        }
+        .btn::before{
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #1439db;
+            opacity: 70%;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+        }
+        .btn:hover::before{
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+            
+        }
+        @keyframes aaa {
+          0%{
+            left: -110%;
+            top: 90%;
+          }50%{
+            left: 10%;
+            top: -30%;
+          }100%{
+            top: -10%;
+            left: -10%;
+          }
+
+        </style>
+    </head>
+    <body>
+            <div class="topnav">  
+						<a href="index.html" /*class="current"*/>Beranda</a>
+						<a href="daftaranime.html" >Daftar Anime</a>
+						<a href="genre.html">Genre</a>
+						<a href="login.html">Login</a>
+               </div>
+        <div class="loginbox">
+            <img class="gmbr" src="icon.jpg" alt="">
+            <h1>Login Here</h1>
+            <p>Username</p>
+            <input type="text" name=" " placeholder="Enter Username">
+            <p>Pasword</p>
+            <input type="text" name=" " placeholder="Enter password">
+            <br>
+            <input type="submit" name=" " value="Login">
+            <br> 
+            <a href="#">Lupa Pasword</a><br>
+            <a href="#">Belum Punya Akun</a>          
+        </div>
+        <div class="middle">
+            <a class="btn" href="#">
+                <i><img src="facebook.png" alt=""></i>
+              </a>
+              <a class="btn" href="#">
+                <i><img src="whatsapp.png" alt=""></i>
+              </a>
+              <a class="btn" href="#">
+                <i><img src="instagram.png" alt=""></i>
+              </a>
+              <a class="btn" href="#">
+                <i><img src="twitter.png" alt=""></i>
+              </a>
+              <a class="btn" href="#">
+                <i><img src="youtube.png" alt=""></i>
+              </a>
+          </div>
+    </body>
+</html>
